@@ -31,11 +31,11 @@ def heapify(arr, N):
 def heapSort(arr):
     N = len(arr)
     heapify(arr, N)
-    isorted = N - 1
-    while isorted > 0:
-        arr[0], arr[isorted] = arr[isorted], arr[0]
-        sift_down(arr, isorted, 0)
-        isorted -= 1
+    unsorted = N
+    while unsorted > 1:
+        arr[0], arr[unsorted - 1] = arr[unsorted - 1], arr[0]
+        unsorted -= 1
+        sift_down(arr, unsorted, 0)
 
 
 def main():
