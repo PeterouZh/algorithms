@@ -39,7 +39,7 @@ def heapSort(arr):
 
 
 def main():
-    arr = [12, 11, 13, 5, 6, 7]
+    arr = [12, 11, 13, 5, 6, 7, 1, 1, 2, 2, 2, 2, 100]
     heapSort(arr)
     n = len(arr)
     print ("Sorted array is")
